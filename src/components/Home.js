@@ -27,7 +27,7 @@ const Home = () => {
 		const res = axios.delete(url)
 			.then((data) => { alert(`Product with ID: ${productid} deleted Successfully.`) })
 			.catch((error) => { alert("error in deletion") });
-	}
+	};
 	return data.length ? (
 		<div className='homeMain'>
 			<div class="app-container">
@@ -46,7 +46,7 @@ const Home = () => {
 				</div>
 			</div>
 		</div>
-	) : <div style={{
+	): <div style={{
 		color: "#fff"
 	}}>Loading...</div>
 }

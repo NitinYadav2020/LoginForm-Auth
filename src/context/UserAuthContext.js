@@ -7,20 +7,6 @@ export const AuthContext = createContext()
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(window.localStorage.user ? JSON.parse(window.localStorage.user) : null)
 
-    // useEffect(() => {
-    //     const reVerifyLogin = async () => {
-    //         if (window.localStorage.accessToken && window.localStorage.user) {
-    //             const response = await axios.get('https://www.googleapis.com/oauth2/v3/tokeninfo?access_token=' + window.localStorage.accessToken)
-    //             if (response.status !== 200) {
-    //                 setUser(null)
-    //             }
-    //         } else {
-    //             setUser(null)
-    //         }
-    //     }
-    //     reVerifyLogin()
-    // }, [])
-
 
     useEffect(() => {
         const unsub = onAuthStateChanged(auth, (currentuser) => {
