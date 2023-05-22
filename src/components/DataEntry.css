@@ -1,0 +1,51 @@
+.add-new-prod-form {
+    background-color: #101827;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .add-new-prod-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .add-new-prod-form label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .add-new-prod-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .add-new-prod-form input,
+  .add-new-prod-form textarea,
+  .add-new-prod-form select {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: #1f2940;
+    color: #fff;
+  }
+  
+  .add-new-prod-form input[type='number'] {
+    width: 50%; /* Adjust width as needed */
+  }
+  
+  .add-new-prod-form button {
+    padding: 10px 20px;
+    background-color: #236eff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .add-new-prod-form button:hover {
+    background-color: #1a4dff;
+  }

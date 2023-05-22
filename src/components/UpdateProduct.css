@@ -1,0 +1,45 @@
+.updatepin{
+  padding: 16px 20px;
+}
+
+.delete-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #101827;
+    padding: 20px;
+  }
+  
+  .delete-form label {
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .inputContainer{
+    padding: 5px;
+  }
+  
+  .delete-form input[type='text'],
+  .delete-form input[type='date'],
+  .delete-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: #1f2940;
+    color: #fff;
+  }
+  
+  .delete-form button[type='submit'] {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .delete-form button[type='submit']:hover {
+    background-color: #c82333;
+  }
+  
