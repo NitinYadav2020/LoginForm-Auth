@@ -21,7 +21,7 @@ const DataEntryForm = () => {
 
 useEffect(()=> {
     if(success) {
-        window.location.href = '/Home';
+        window.location.href = '/';
     }
 }, [success]);
 

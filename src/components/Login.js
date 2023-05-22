@@ -14,7 +14,7 @@ const Login = () => {
 
   useEffect(() => {
     const checkIfAuthenticated = () => {
-      if (user) navigate('/home')
+      if (user) navigate('/')
     }
     checkIfAuthenticated()
   }, [user])
@@ -24,7 +24,7 @@ const Login = () => {
     setError("");
     try {
       await signIn(email, password)
-      navigate('/home')
+      navigate('/')
     } catch (err) {
       setError(err.message)
     }
@@ -34,7 +34,7 @@ const Login = () => {
     e.preventDefault();
     try {
       googleSignIn();
-      navigate("/home");
+      navigate("/");
     } catch (error) {
       console.log(error.message);
     }
